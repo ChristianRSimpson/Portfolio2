@@ -13,6 +13,18 @@ var services = require('./routes/services');
 
 var app = express();
 
+//*************************************************************
+var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Christian R. Simpson' });
+});
+
+module.exports = router;
+//*************************************************************
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
