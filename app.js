@@ -1,3 +1,7 @@
+//Author: Christian Simpson
+//File Name: Index.ejs
+//Web Site: christiansimpson.azurewebsite.net
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
