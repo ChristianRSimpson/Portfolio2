@@ -11,7 +11,7 @@ var User = require('../models/user');
 
 /* Render home page. */
 router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Christian Simpson',
+    res.render('index', { title: 'Home',
         displayName: req.user ? req.user.displayName : ''
     });
 });
@@ -26,7 +26,7 @@ router.get('/login', function (req, res, next) {
         });
     }
     else {
-        return res.redirect('/users');
+        return res.redirect('/');
     }
 });
 
